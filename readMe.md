@@ -63,6 +63,7 @@ trainDenoisingNetwork(trainingData)
 ## Files
 babbleDenoiseNets.mat
 - babbleDenosieNets.mat contains 5 networks trained with differrent parameters, the sampling frequency, a noisy sample (note that the sampling rate of these networks is 16kHz)
+
 | Network Name                         | Number of Convolutional Triples | Number of Epochs |
 | ------------------------------------ | ------------------------------- | ---------------- |
 | babbleDenoiseNet10ConvTrip20Epochs   | 10                              | 20               |
@@ -70,13 +71,16 @@ babbleDenoiseNets.mat
 | babbleDenoiseNet1ConvTrip100Epochs   |  1                              | 100              |
 | babbleDenoiseNet3ConvTrip50Epochs    |  3                              | 50               |
 | babbleDenoiseNet3ConvTrip100Epochs   |  3                              | 90               |
+
 - to denoise the babbleNoisySig sample, simply call the following denoise() function, replacing netUnderTest with any of the above networks: babbleDenoisedSig = denoise(netUnderTest,babbleNoisySig);
 
 denoiseNets.mat
 - denoiseNets.mat contains the two final networks in one file along with the sampling rate used for the training and testing of these networks (note that the sampling rate of these networks is 44.1kHz)
-Networks:                 Number of Convolutional Triples     Number of Epochs
-    babbleDenoiseNet      5                                   50
-    machineryDenoiseNet   5                                   50
+    
+| Network Name         | Number of Convolutional Triples | Number of Epochs |
+| -------------------- | ------------------------------- | ---------------- |
+| babbleDenoiseNet     |  5                              | 50               |
+| machineryDenoiseNet  |  5                              | 50               |
 
 denoisingNet_Babble.mat
 - denoisingNet_Babble.mat contains the babble denoising network
@@ -86,12 +90,14 @@ denoisingNet_Machinery.mat
 
 fanDenoiseNets.mat
 - fanDenoiseNets.mat contains the 3 fan denoising networks generated and discussed in the report along with corresponding noisy samples at each specified input SNR (note that the sampling rate of these networks is 16kHz)
-Networks:                 Number of Convolutional Triples     Number of Epochs
-    fanDenoiseNet10dB     5                                   75
-    fanDenoiseNet3dB      5                                   75
-    fanDenoiseNet5dB      5                                   75
-- to denoise one of the noisy samples, simply call the following denoise() function, replacing fanDenoiseNet5dB with any of the above networks
-    >> babbleDenoisedSig = denoise(fanDenoiseNet5dB,fanNoisySig5dB);
+    
+| Network Name         | Number of Convolutional Triples | Number of Epochs |
+| -------------------- | ------------------------------- | ---------------- |
+| fanDenoiseNet10dB    |  5                              | 75               |
+| fanDenoiseNet3dB     |  5                              | 75               |
+| fanDenoiseNet5dB     |  5                              | 75               |
+
+- to denoise one of the noisy samples, simply call the following denoise() function, replacing fanDenoiseNet5dB with any of the above networks: babbleDenoisedSig = denoise(fanDenoiseNet5dB,fanNoisySig5dB);
 
 NoisyTestSignal_Babble.mat
 - NoisyTestSignal_Babble.mat contains the raw noisy babble sample for denoising as well as the corresponding sampling rate
