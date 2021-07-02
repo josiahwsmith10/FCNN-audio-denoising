@@ -1,6 +1,6 @@
-%%%%%%%%%%%%%%%%%%%%%%% Instructions %%%%%%%%%%%%%%%%%%%%%%%
+## Instructions
 
-Main File: EESC6364_Project_Main_Helwa_Smith.m
+Main File: FCNN_Audio_Denoising_ML_DSP.m
 -Execute each section of code independently
 
 Section 1: Real-Time Data Collection and Denoising
@@ -26,7 +26,7 @@ Section 4: Playback Babble Denoised Signal
 -This portion of code loads our pretrained network and a noisy sample, denoises the sample using the network, and plays the noisy sample followed by the denoised sample
 -For this test case, we have provided a sampling frequency of 44.1kHz, the sample rate of the raw noisy signal as well as the training data used for this network
 
-%%%%%%%%%%%%%%%%%% User-Defined Functions %%%%%%%%%%%%%%%%%%
+## User-Defined Functions 
 
 frame_sig_new(signal, frame_len)
     -frame_sig_new accepts a signal vector of length Nx1 and a scalar frame_len
@@ -61,7 +61,7 @@ trainDenoisingNetwork(trainingData)
     -the two channels of trainingData are used to train the fully convolutional neural network
     -trainDenoisedNetwork outputs a SerialNetwork,TrainingOptionsADAM,Layers
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%% Files %%%%%%%%%%%%%%%%%%%%%%%%%%
+## Files
 babbleDenoiseNets.mat
 -babbleDenosieNets.mat contains 5 networks trained with differrent parameters, the sampling frequency, a noisy sample (note that the sampling rate of these networks is 16kHz)
     Networks:                               Number of Convolutional Triples     Number of Epochs
