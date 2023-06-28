@@ -109,9 +109,11 @@ Audio Files:
 - This folder contains the noise and voice + noise data used for training and testing
 
 ### Publication and Citation
-*Terhertz Imaging Toolbox with Interactive User Interface*
-
 If you appreciate our work and would like to use it in your research, please cite one of the papers using extensions of this project:
+- Deep Learning-Based Multiband Signal Fusion for 3-D SAR Super-Resolution ([arXiv](https://arxiv.org/abs/2305.02017), [DOI](https://doi.org/10.1109/TAES.2023.3270111))
+- Efficient CNN-based Super Resolution Algorithms for mmWave Mobile Radar Imaging ([arXiv](https://arxiv.org/abs/2305.02092), [DOI](https://doi.org/10.1109/ICIP46576.2022.9897190))
+- A Vision Transformer Approach for Efficient Near-Field Irregular SAR Super-Resolution ([arXiv](https://arxiv.org/abs/2305.02074), [DOI](https://doi.org/10.1109/WMCS55582.2022.9866326))
+- An FCNN-Based Super-Resolution mmWave Radar Framework for Contactless Musical Instrument Interface ([arXiv](https://arxiv.org/abs/2305.01995), [DOI](https://doi.org/10.1109/TMM.2021.3079695))
 ```
 @article{smith2023dual_radar,
 	title        = {Deep Learning-Based Multiband Signal Fusion for 3-D SAR Super-Resolution},
