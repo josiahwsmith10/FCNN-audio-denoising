@@ -115,7 +115,7 @@ If you appreciate our work and would like to use it in your research, please cit
 - A Vision Transformer Approach for Efficient Near-Field Irregular SAR Super-Resolution ([arXiv](https://arxiv.org/abs/2305.02074), [DOI](https://doi.org/10.1109/WMCS55582.2022.9866326))
 - An FCNN-Based Super-Resolution mmWave Radar Framework for Contactless Musical Instrument Interface ([arXiv](https://arxiv.org/abs/2305.01995), [DOI](https://doi.org/10.1109/TMM.2021.3079695))
 ```
-@article{smith2023dual_radar,
+@article{smith2023deep,
 	title        = {Deep Learning-Based Multiband Signal Fusion for 3-D SAR Super-Resolution},
 	author       = {Smith, J. W. and Torlak, M.},
 	year         = 2023,
